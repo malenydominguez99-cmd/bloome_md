@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-pink" href="#">
+      <img src="img/logo.png" alt="Logo" width="50" class="me-2">
+    </a>
+    <span class="navbar-text fw-semibold">Carrito de Compras</span>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <h2 class="mb-4">🛒 Productos en tu Carrito</h2>
+
+  <ul id="listaCarrito" class="list-group mb-3"></ul>
+
+  <h4 class="text-end">Total: $<span id="totalCarrito">0</span></h4>
+
+  <div class="text-end mt-3">
+    <button class="btn btn-primary">Proceder al pago</button>
+  </div>
+</div>
+
+<footer class="text-center p-3 mt-5">
+  © 2025 Bloome Shop – Carrito de Compras
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

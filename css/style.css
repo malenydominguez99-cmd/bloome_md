@@ -1,0 +1,75 @@
+body {
+  background-color: #fffafc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffe4f0 !important;
+}
+
+.navbar a.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.navbar a.nav-link:hover {
+  color: #ff66a3 !important;
+}
+
+/* Títulos */
+h2 {
+  color: #ff66a3;
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #ff80b5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff4d94;
+}
+
+/* Footer */
+footer {
+  background-color: #ffe4f0;
+  color: #555;
+}
+
+/* Botones navbar */
+.btn-pink {
+  background-color: #ff80b5; 
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #ff4d94;  
+  transform: translateY(-2px);
+}
+
+/* Botones inicio */
+.btn-pink {
+  background-color: #ff80b5;  
+  color: white;                
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;            
+  border-radius: 30px;        
+  padding: 8px 20px;           
+  transition: all 0.3s ease;  
+  border: none;               
+  text-decoration: none;       
+}
+
+.btn-pink:hover {
+  background-color: #ff4d94;  
+  transform: translateY(-2px); 
+}
