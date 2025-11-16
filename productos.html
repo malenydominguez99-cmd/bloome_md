@@ -1,349 +1,481 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Productos - MiTienda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./assets/icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Bloome | Productos </title>
+  <link rel="icon" href="./assets/icon.png">
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./assets/logo_fondo.png" alt="Bloome" width="150" class="me-2">
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-white">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./assets/logo_fondo.png" alt="Logo" width="60" class="me-2">
+        <span class="fw-semibold" style="font-size: 1.2rem;">Bloome Shop</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="./index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="./productos.html">Productos</a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="./contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="btn btn-pink" href="./carrito.html">🛒 Carrito</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TÍTULO -->
+  <section class="container py-5">
+    <h2 class="text-center fw-semibold section-title mb-4">✨ Nuestros Productos ✨</h2>
+    <p class="text-center mb-5" style="max-width: 600px; margin: auto;">
+      Explora nuestra colección de cosméticos coreanos auténticos.  
+      Calidad premium, empaques adorables y resultados increíbles 💖
+    </p>
+
+    <!-- LISTA DE PRODUCTOS -->
+    <div class="row g-4">
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/serum.png" class="card-img-top rounded-4" alt="Serum Hidratante">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Serum Hidratante</h5>
+            <p class="card-text text-muted">Hidrata profundamente y deja la piel luminosa.</p>
+            <p class="price fw-bold">$320 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="1"
+              data-nombre="Serum Hidratante"
+              data-precio="320"
+              data-imagen="./assets/serum.png"> 
+              Agregar al carrito 💖
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
-
-                    <li class="nav-item mx-2">
-                        <a class="btn btn-pink" href="index.html">Inicio</a>
-                    </li>
-
-                    <li class="nav-item mx-2">
-                        <a class="btn btn-pink" href="./productos.html">Productos</a>
-                    </li>
-
-                    <li class="nav-item mx-2">
-                        <a class="btn btn-pink" href="./contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-            </div>
+          </div>
         </div>
-    </nav>
+      </div>
 
-
-
-
-
-    <!-- productos -->
-    <div class="row">
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/aceitefacial.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Aceite limpiador facial</h5>
-                    <p class="card-text small">Aceite Limpiador Madagascar Centella Light Cleansing Oil.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$265.23</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 2 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/mascarilla.png" class="card-img-top rounded-4" alt="Mascarilla Facial">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Mascarilla Facial</h5>
+            <p class="card-text text-muted">Para una piel tersa, suave y brillante.</p>
+            <p class="price fw-bold">$45 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="2"
+              data-nombre="Mascarilla Facial"
+              data-precio="45"
+              data-imagen="./assets/mascarilla.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/desmaquillante.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Aceite limpiador facial</h5>
-                    <p class="card-text small">Beauty of Joseon - Aceite Limpiador Ginseng Cleansing Oil.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$389.90</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 3 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/tinta.png" class="card-img-top rounded-4" alt="Lip Tint">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Lip Tint</h5>
+            <p class="card-text text-muted">Color duradero y acabado natural.</p>
+            <p class="price fw-bold">$150 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="3"
+              data-nombre="Lip Tint"
+              data-precio="150"
+              data-imagen="./assets/tinta.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/tonico.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Tónico hidratante</h5>
-                    <p class="card-text small">Tónico Madagascar Centella Toning Toner.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$286.45</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 4 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/tinta2.png" class="card-img-top rounded-4" alt="Lip Tint">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Lip Tint</h5>
+            <p class="card-text text-muted">Color duradero y acabado natural.</p>
+            <p class="price fw-bold">$150 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="4"
+              data-nombre="Lip Tint"
+              data-precio="150"
+              data-imagen="./assets/tinta2.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/tonico2.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Tónico hidratante</h5>
-                    <p class="card-text small">Anua - Tónico Rice 70 Glow Milky Toner.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$445.58</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 5 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/crema.png" class="card-img-top rounded-4" alt="Crema Revitalizante">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Crema Revitalizante</h5>
+            <p class="card-text text-muted">Piel suave, firme y más joven.</p>
+            <p class="price fw-bold">$280 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="5"
+              data-nombre="Crema Revitalizante"
+              data-precio="280"
+              data-imagen="./assets/crema.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/bbcream.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">BB Cream</h5>
-                    <p class="card-text small">heimish - Crema BB Moringa Ceramide BB Cream - 8 Tonos.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$212.18</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 6 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/bbcream.png" class="card-img-top rounded-4" alt="BB Cream">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">BB Cream</h5>
+            <p class="card-text text-muted">Cobertura ligera y piel perfecta.</p>
+            <p class="price fw-bold">$350 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="6"
+              data-nombre="BB Cream"
+              data-precio="350"
+              data-imagen="./assets/bbcream.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/tinta.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">#01 Chill Red</h5>
-                    <p class="card-text small">TOCOBO - Aceite Labial Juicy Berry Plumping Lip Oil - 14 Colores.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$183.32</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 7 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/aceitefacial.png" class="card-img-top rounded-4" alt="Espuma Facial">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Espuma Facial</h5>
+            <p class="card-text text-muted">Limpia sin resecar, ideal piel sensible.</p>
+            <p class="price fw-bold">$190 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="7"
+              data-nombre="Espuma Facial"
+              data-precio="190"
+              data-imagen="./assets/aceitefacial.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/tinta2.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">#03 Black Cherry</h5>
-                    <p class="card-text small">TOCOBO - Aceite Labial Juicy Berry Plumping Lip Oil - 14 Colores.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$183.32</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 8 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/aceite.png" class="card-img-top rounded-4" alt="Aceite Facial">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Aceite Facial </h5>
+            <p class="card-text text-muted">TOCOBO - Aceite Limpiador Vegano Calamine Pore Control Cleansing Oil</p>
+            <p class="price fw-bold">$420 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="8"
+              data-nombre="Aceite Facial"
+              data-precio="420"
+              data-imagen="./assets/aceite.png"> 
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/base.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Base De Maquillaje</h5>
-                    <p class="card-text small">UNLEASHIA - Base de Maquillaje Estilo Cushion Babe Skin Baby Blue Cushion.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$393.39</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 9 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/tonico2.png" class="card-img-top rounded-4" alt="Tonico">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Tonico</h5>
+            <p class="card-text text-muted">Anua - Tónico Rice 70 Glow Milky Toner</p>
+            <p class="price fw-bold">$445 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="9"
+              data-nombre="Tonico"
+              data-precio="445"
+              data-imagen="./assets/tonico2.png"> 
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/sombra.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">N°2 All Of Brown</h5>
-                    <p class="card-text small">UNLEASHIA - Paleta de Sombras Glitterpedia Eye Palette - 7 Tipos</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$275.84</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 10 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/tonico.png" class="card-img-top rounded-4" alt="Tonico">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Tonico</h5>
+            <p class="card-text text-muted">SKIN 1004 - Tónico Madagascar Centella Toning Toner</p>
+            <p class="price fw-bold">$286 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="10"
+              data-nombre="Tonico"
+              data-precio="286"
+              data-imagen="./assets/tonico.png"> 
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/sombra2.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">N°4 All Of Lavender Fog</h5>
-                    <p class="card-text small">UNLEASHIA - Paleta de Sombras Glitterpedia Eye Palette - 7 Tipos</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$275.84</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 11 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/desmaquillante.png" class="card-img-top rounded-4" alt="Desmaquillante">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Desmaquillante</h5>
+            <p class="card-text text-muted">SKIN 1004 - Aceite Limpiador Madagascar Centella Light Cleansing Oil</p>
+            <p class="price fw-bold">$265 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="11"
+              data-nombre="Desmaquillante"
+              data-precio="265"
+              data-imagen="./assets/desmaquillante.png"> 
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/cejas.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Fijador De Cejas</h5>
-                    <p class="card-text small">UNLEASHIA - Fijador de Cejas Shaper Pomade Eyebrow Fixer</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$182.05</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 12 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/cejas.png" class="card-img-top rounded-4" alt="Fijador">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Fijador De Cejas</h5>
+            <p class="card-text text-muted">UNLEASHIA - Fijador de Cejas Shaper Pomade Eyebrow Fixer</p>
+            <p class="price fw-bold">$182 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="12"
+              data-nombre="Fijador"
+              data-precio="182"
+              data-imagen="./assets/cejas.png"> 
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/aceite.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Aceite Facial</h5>
-                    <p class="card-text small">TOCOBO - Aceite Limpiador Vegano Calamine Pore Control Cleansing Oil</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$275.84</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 13 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/sombra.png" class="card-img-top rounded-4" alt="Sombra">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Sombras</h5>
+            <p class="card-text text-muted">UNLEASHIA - Paleta de Sombras Glitterpedia Eye Palette - 7 Tipos</p>
+            <p class="price fw-bold">$275 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="13"
+              data-nombre="Sombra"
+              data-precio="275"
+              data-imagen="./assets/sombra.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/rubor.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">#CR02 Boy</h5>
-                    <p class="card-text small">fwee - Labial y Rubor Lip&Cheek Blurry Pudding Pot - 35 Colores</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$386.17</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 14 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/sombra2.png" class="card-img-top rounded-4" alt="Sombra">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Sombras</h5>
+            <p class="card-text text-muted">UNLEASHIA - Paleta de Sombras Glitterpedia Eye Palette - 7 Tipos</p>
+            <p class="price fw-bold">$275 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="14"
+              data-nombre="Sombra"
+              data-precio="275"
+              data-imagen="./assets/sombra2.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/rubor2.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Rubor</h5>
-                    <p class="card-text small">Dasique - Labial y rubor multiusos Souffle Color Pot - 23 Colores</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$248.04</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 15 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/base.png" class="card-img-top rounded-4" alt="Base">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Cushion Babe</h5>
+            <p class="card-text text-muted">UNLEASHIA - Base de Maquillaje Estilo Cushion Babe Skin Baby Blue Cushion</p>
+            <p class="price fw-bold">$393 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="15"
+              data-nombre="Base"
+              data-precio="393"
+              data-imagen="./assets/base.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/brochas.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Set of 2 - 8 Pcs Brush & 1 Pcs Sponge - Mixed Color</h5>
-                    <p class="card-text small">Stroke of Beauty - Makeup Brush / Makeup Blender Beauty Sponge / Set</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$250.07</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 16 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/rubor.png" class="card-img-top rounded-4" alt="Rubor">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Rubor Y Tinta </h5>
+            <p class="card-text text-muted">fwee - Labial y Rubor Lip&Cheek Blurry Pudding Pot - 35 Colores</p>
+            <p class="price fw-bold">$386 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="16"
+              data-nombre="Rubor"
+              data-precio="386"
+              data-imagen="./assets/rubor.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/esponga.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">#06 Soft Purple - 1pc</h5>
-                    <p class="card-text small">FOCALLURE - Match Max Make Up Sponge - One Cut Heart</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$50.07</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+       <!-- PRODUCTO 17 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/rubor2.png" class="card-img-top rounded-4" alt="Rubor">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Rubor En Barra</h5>
+            <p class="card-text text-muted">PINKFLASH - Rubor en Barra Multi-Use Watery Blush Stick - 6 Colores</p>
+            <p class="price fw-bold">$95 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="17"
+              data-nombre="Rubor"
+              data-precio="95"
+              data-imagen="./assets/rubor2.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/serum.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Serum</h5>
-                    <p class="card-text small">SKIN 1004 - Ampolla Facial Madagascar Centella Tea-Trica Relief Ampoule</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$307.07</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+         <!-- PRODUCTO 18 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/brochas.png" class="card-img-top rounded-4" alt="Brochas">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Set De Brochas</h5>
+            <p class="card-text text-muted">Choyu - Brocha de maquillaje / Estuche para brochas de PVC / Juego</p>
+            <p class="price fw-bold">$195 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="18"
+              data-nombre="Brochas"
+              data-precio="195"
+              data-imagen="./assets/brochas.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100">
-                <img src="./assets/mascarilla.png" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Mascarilla Facial</h5>
-                    <p class="card-text small">PUREDERM - Mascarilla de colágeno para la zona de los ojos Collagen Eye Zone Mask 30 uds.</p>
-                    <div class="mt-auto text-center">
-                        <p class="h6">$88.96</p>
-                        <button class="btn btn-sm btn-primary add-to-cart">
-                            Agregar
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- PRODUCTO 19 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/esponga.png" class="card-img-top rounded-4" alt="Esponja">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Esponja</h5>
+            <p class="card-text text-muted">FOCALLURE - Match Max Make Up Sponge - One Cut Heart</p>
+            <p class="price fw-bold">$51 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="19"
+              data-nombre="Esponja"
+              data-precio="51"
+              data-imagen="./assets/esponga.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
         </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+      <!-- PRODUCTO 20 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/corector.png" class="card-img-top rounded-4" alt="Corrector">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Corrector</h5>
+            <p class="card-text text-muted">Parnell - Cicamanu Skinfit Cover Concealer - 2 Colors</p>
+            <p class="price fw-bold">$166 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="20"
+              data-nombre="Corrector"
+              data-precio="166"
+              data-imagen="./assets/corector.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 21 -->
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 p-2">
+          <img src="./assets/rimel.png" class="card-img-top rounded-4" alt="Mascara">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">Mascara De Pestañas</h5>
+            <p class="card-text text-muted">Judydoll - Duo Rimel Volume & Curling Mascara Duo</p>
+            <p class="price fw-bold">$175 MXN</p>
+            <button class="btn btn-pink add-to-cart"
+              data-id="21"
+              data-nombre="Mascara"
+              data-precio="175"
+              data-imagen="./assets/rimel.png">
+              Agregar al carrito 💖
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center p-4 mt-5">
+    <p class="mb-0">&copy; 2025 Bloome Shop — Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script carrito -->
+  <script src="./js/script.js"></script>
 
 </body>
-
 </html>
